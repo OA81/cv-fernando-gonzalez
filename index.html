@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Currículum Vitae - Fernando González Serrano</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+      margin: 0;
+      background-color: #f4f6f8;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 40px;
+      background-color: #ffffff;
+      box-shadow: none;
+      border-radius: 12px;
+      color: #222;
+    }
+    h1 {
+      color: #2c3e50;
+      font-size: 2.5rem;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+      font-weight: 700;
+    }
+    h2 {
+      color: #3498db;
+      margin-top: 30px;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    p,
+    ul {
+      font-size: 1rem;
+      margin-bottom: 8px;
+      color: #333;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .contact-info {
+      margin-bottom: 20px;
+      background-color: #ecf0f1;
+      padding: 15px;
+      border-radius: 8px;
+      font-weight: 500;
+    }
+    .contact-info p {
+      margin: 5px 0;
+    }
+    .section {
+      margin-bottom: 25px;
+      page-break-inside: avoid;
+    }
+    strong {
+      color: #2c3e50;
+      font-weight: 600;
+    }
+    .buttons {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 25px;
+      justify-content: flex-end;
+    }
+    button {
+      cursor: pointer;
+      background-color: #3498db;
+      border: none;
+      color: white;
+      padding: 10px 18px;
+      font-size: 1rem;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, transform 0.15s ease;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      user-select: none;
+    }
+    button:hover {
+      background-color: #2980b9;
+      transform: scale(1.05);
+    }
+    button svg {
+      width: 20px;
+      height: 20px;
+      fill: white;
+      flex-shrink: 0;
+    }
+    #loadingMessage {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background: #3498db;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 5px;
+      font-weight: 600;
+      display: none;
+      z-index: 9999;
+    }
+  </style>
+</head>
+<body>
+  <div id="loadingMessage">Generando PDF...</div>
+
+  <div class="container" id="cv-content">
+    <div class="buttons">
+      <button id="savePdfBtn" title="Guardar CV como PDF" aria-label="Guardar CV como PDF">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M17 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7l-6-4zM7 19v-6h10v6H7zm5-9a2 2 0 1 1-2 2 2 2 0 0 1 2-2z"/>
+        </svg>
+        Guardar PDF
+      </button>
+    </div>
+
+    <!-- Contenido del CV -->
+    <h1>Fernando González Serrano</h1>
+    <div class="contact-info">
+      <p>📍 Cda. Laurel # 9 Col. Las Maromas, Cuajimalpa, CDMX.</p>
+      <p>📞 55 5051 2496</p>
+      <p>✉️ fgs9804@hotmail.com</p>
+      <p>✉️ fernando.gonzalezs@softtek.com</p>
+    </div>
+
+    <div class="section">
+      <h2>Perfil Profesional</h2>
+      <p>
+        Ingeniero en soporte, especializado en administración de servidores
+        Windows. Experto en Middleware y administración de aplicaciones web en
+        entornos IIS. Amplia experiencia en soporte técnico, mantenimiento de
+        infraestructura, redes y configuración de sistemas empresariales.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Datos Personales</h2>
+      <ul>
+        <li>Edad: 43 años</li>
+        <li>CURP: GOSF811214HDFNRR05</li>
+        <li>Afiliación IMSS: 6897-81-7929-6</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Formación Académica</h2>
+      <p>
+        <strong>Bachillerato</strong> – C.E.C.y.T. #4 “Lázaro Cárdenas del Río”
+        (1997 – 2001)
+      </p>
+      <p>
+        <strong>Técnico en Operación de Bases de Datos (Access)</strong> –
+        C.E.C.A.T.I. #194 (2001 – 2002)
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Cursos y Capacitaciones</h2>
+      <ul>
+        <li>Sistema de Control Administrativo y Punto de Venta – Dintelsis S.A. de
+          C.V. (2005)</li>
+        <li>Mantenimiento y Reparación de Equipo de Cómputo – C.E.C.A.T.I. #4
+          (2006)</li>
+        <li>Mantenimiento y Reparación de Impresoras – C.E.C.A.T.I. #4 (2006)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Experiencia Laboral</h2>
+      <p>
+        <strong>Softtek</strong> (2018 – Actual)<br />
+        Proyecto Nissan Mexicana<br />
+        <strong>Puesto:</strong> Middleware Specialist – Administración de sistemas
+        web a nivel de IIS (Internet Information Services), incluyendo configuración,
+        monitoreo y mantenimiento. Experiencia en la identificación y resolución
+        de fallas a nivel servidor, asegurando la disponibilidad y el rendimiento
+        óptimo de los servicios web.
+      </p>
+
+      <p>
+        <strong>DESC Corporativo – Grupo KUO</strong> (2013 – 2016)<br />
+        Ingeniero de Soporte Junior – Administración y gestión de Active Directory,
+        plataformas de correo electrónico corporativo (WebMail), soluciones integrales
+        de seguridad antivirus y respaldo de datos mediante eStorage.
+      </p>
+
+      <p>
+        <strong>Freezecode Networks</strong> (2011 – 2012)<br />
+        Responsable de brindar soporte técnico de segundo nivel, así como de la
+        administración y mantenimiento de servidores basados en Windows. Experiencia
+        en la gestión de servicios críticos como Microsoft Exchange Server, Active
+        Directory, IIS (Internet Information Services) y SQL Server. Encargado de
+        asegurar la disponibilidad, rendimiento y seguridad de los sistemas, así
+        como de implementar actualizaciones, realizar respaldos y resolver incidencias
+        técnicas.
+      </p>
+
+      <p>
+        <strong>Calefacción y Ventilación S.A. de C.V.</strong> (2010 – 2011)<br />
+        soporte técnico tanto remoto como presencial a nivel nacional e internacional,
+        asegurando la continuidad operativa y la atención eficiente de incidencias.
+        Estuve a cargo de la administración de consolas WSUS para la gestión de
+        actualizaciones en entornos Windows, así como de la configuración y mantenimiento
+        de plataformas de correo electrónico corporativo y dispositivos móviles,
+        garantizando su correcto funcionamiento y seguridad.
+      </p>
+
+      <p>
+        <strong>SERVER S.A. de C.V. – Proyecto Seguros Banamex</strong> (2007 – 2009)<br />
+        Consultor en tecnologías de la información, con experiencia en la administración
+        de software empresarial y soporte técnico a través de la mesa de ayuda
+        (Help Desk). Encargado del seguimiento y resolución de tickets, garantizando
+        tiempos de respuesta eficientes y altos niveles de satisfacción del usuario.
+        Colaboración con equipos multidisciplinarios para optimizar procesos y mejorar
+        la experiencia del cliente interno.
+      </p>
+
+      <p>
+        <strong>Grupo Van Ruymbeke (Vidambiente S.A. de C.V.)</strong> (2004 – 2006)<br />
+        Encargado de Soporte Técnico, responsable de la gestión integral del mantenimiento
+        preventivo de equipos y sistemas, así como de la administración y monitoreo
+        de redes informáticas. Experiencia en la identificación y resolución de
+        incidencias, optimización del rendimiento de infraestructura tecnológica
+        y soporte a usuarios para garantizar la continuidad operativa.
+      </p>
+
+      <p>
+        <strong>SIGA S.A. de C.V. (IBM)</strong> (2003 – 2004)<br />
+        Soporte técnico especializado en infraestructura de redes, incluyendo instalación
+        y mantenimiento de cableado estructurado y redes inalámbricas.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Conocimientos Técnicos</h2>
+      <p><strong>Hardware:</strong> Redes, CCTV, impresoras, diagnóstico y mantenimiento de PC.</p>
+      <p>
+        <strong>Software y Sistemas:</strong> Gestión y administración de entornos
+        Windows Server, incluyendo Active Directory y Outlook. Administración de bases
+        de datos con SQL Server y virtualización mediante VMware. Soporte remoto y
+        diagnóstico con TeamViewer, así como inventario y gestión de activos con TNI.
+        Experiencia en soluciones de respaldo y recuperación utilizando Acronis y Ghost.
+        Manejo de sistemas contables CONTPAQi y administración de sitios web a través
+        de la plataforma IIS (Internet Information Services).
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Idiomas</h2>
+      <p>Español (nativo)</p>
+      <p>
+        Inglés: Nivel técnico – comprensión de lectura y escritura orientada a entornos
+        tecnológicos y documentación técnica
+      </p>
+    </div>
+  </div>
+
+  <!-- Librerías necesarias -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+  <script>
+    const { jsPDF } = window.jspdf;
+    const savePdfBtn = document.getElementById("savePdfBtn");
+    const loadingMessage = document.getElementById("loadingMessage");
+
+    savePdfBtn.addEventListener("click", () => {
+      loadingMessage.style.display = "block";
+
+      const cvElement = document.getElementById("cv-content");
+      const pdf = new jsPDF("p", "pt", "a4");
+      const pdfWidth = pdf.internal.pageSize.getWidth();
+      const pdfHeight = pdf.internal.pageSize.getHeight();
+      const margin = 40;
+
+      // Vamos a capturar la página en trozos para evitar cortes
+      html2canvas(cvElement, { scale: 2 }).then((canvas) => {
+        const imgData = canvas.toDataURL("image/png");
+        const imgProps = pdf.getImageProperties(imgData);
+        const imgWidth = pdfWidth - margin * 2;
+        const imgHeight = (imgProps.height * imgWidth) / imgProps.width;
+
+        let heightLeft = imgHeight;
+        let position = margin;
+
+        pdf.addImage(imgData, "PNG", margin, position, imgWidth, imgHeight);
+        heightLeft -= pdfHeight - margin;
+
+        while (heightLeft > 0) {
+          pdf.addPage();
+          position = heightLeft - imgHeight + margin;
+          pdf.addImage(imgData, "PNG", margin, position, imgWidth, imgHeight);
+          heightLeft -= pdfHeight - margin;
+        }
+
+        pdf.save("Curriculum_Vitae_Fernando_Gonzalez.pdf");
+        loadingMessage.style.display = "none";
+      }).catch(() => {
+        alert("Error al generar el PDF. Intenta de nuevo.");
+        loadingMessage.style.display = "none";
+      });
+    });
+  </script>
+</body>
+</html>
